@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freestyle football is my passion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kanit:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="jquery.scrollTo.min.js"></script>
+
+    <script>
+      jQuery(function ($) {
+        //zresetuj scrolla
+        $.scrollTo(0);
+        $("#link1").click(function () {
+          $.scrollTo($("#historiaff"), 500);
+        });
+        $("#link2").click(function () {
+          $.scrollTo($("#styleff"), 500);
+        });
+        $("#link3").click(function () {
+          $.scrollTo($("#polskaff"), 500);
+        });
+        $("#link4").click(function () {
+          $.scrollTo($("#zawodyff"), 500);
+        });
+        $("#link5").click(function () {
+          $.scrollTo($("#kontakt"), 500);
+        });
+        $(".scrollup").click(function () {
+          $.scrollTo($("body"), 1000);
+        });
+
+        //pokaż podczas przewijania
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) $(".scrollup").fadeIn();
+          else $(".scrollup").fadeOut();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Freestyle Football is my passion</h1>
+      <img src="./img/freestyle-football.jpeg" alt="freestyle-football-logo" />
+    </div>
+    <nav class="menu">
+      <div class="dropdown">
+        <a href="#">Czym jest freestyle football</a>
+        <ul>
+          <li><a id="link1" href="#">Historia</a></li>
+          <li><a id="link2" href="#">Style</a></li>
+          <li><a id="link3" href="#">Polska we Freestyle Footballu</a></li>
+          <li><a id="link4" href="#">Turnieje</a></li>
+        </ul>
+      </div>
+      <a href="leksykon.html">Leksykon trików</a>
+      <a id="link5" href="#">Kontakt</a>
+    </nav>
+    <div class="container">
+      <a href="#" class="scrollup"></a>
+      <img id="pic1" src="./img/2181.jpeg" alt="foto" />
+      <img id="pic2" src="./img/GPJNews_Argentina.jpg" alt="foto" />
+      <img id="pic3" src="./img/indeks.jpeg" alt="foto" />
+      <img id="pic4" src="./img/LANDSCAPE_840.jpeg" alt="foto" />
+      <img id="pic5" src="./img/slide001.jpg" alt="foto" />
+    </div>
+
+    <section class="historia">
+      <h2 id="historiaff">Historia freestyle football</h2>
+      <p>
+        Jest to sztuka wykonywania ewolucji żonglersko-cyrkowych (piłką).
+        Dyscyplina sportu, która liczy kilkanaście lat. Freestyle football
+        wywodzi się z piłki nożnej i powstał na skutek udoskonalania i
+        wymyślania nowych sztuczek piłkarskich. We freestyle footballu odbywają
+        się mistrzostwa (świata, Europy itp.) oraz zjazdy, lecz największą
+        oglądalnością cieszą się pokazy. Freestyle football jest młodą
+        dyscypliną sportu. W początkowej fazie tego sportu najważniejszy był
+        styl air. Z czasem coraz większy nacisk kładziony był na inne style
+        (upper, sd). Obecnie dobry freestyler radzić sobie dobrze we wszystkich
+        stylach. Coraz popularniejsze jest łączenie freestyle footballu z tańcem
+        czy akrobatyką. Sport ten daje dużo możliwości, więc pojawia się coraz
+        więcej zawodników prezentujących własne triki oraz własny styl gry. Mimo
+        tego, że jest to młoda dyscyplina sportu, freestyle football rozwija się
+        w szybkim tempie. Obserwując mistrzostwa świata z roku na rok widać
+        wyraźny wzrost poziomu gry.
+      </p>
+    </section>
+
+    <section class="style-ff">
+      <h2 id="styleff">Wyróżniamy różne style wykonywania trików</h2>
+
+      <p>We freestyle footballu wyróżniamy 4 główne style:</p>
+      <ul>
+        <li>Air – triki wykonywane przez podbijanie piłki nogami</li>
+        <img src="./img/air.gif" alt="air" />
+        <li>Sit down – triki wykonywane na siedząco</li>
+        <img src="./img/sd.gif" alt="SD" />
+        <li>
+          Upper – toczenie i trzymanie piłki na głowie, karku, klatce piersiowej
+        </li>
+        <img src="./img/upper.gif" alt="upper" />
+        <li>
+          Ground – zwody i triki wykonywane na ziemi – najbardziej przydatne do
+          gry w zwykłą piłkę nożną
+        </li>
+        <img id="picture1" src="./img/ground.gif" alt="ground" />
+      </ul>
+    </section>
+
+    <section class="polskaff">
+      <h2 id="polskaff">Polska we freestyle footballu</h2>
+      <p>
+        Polacy we freestyle footballu należą do ścisłej światowej czołówki. Nasi
+        zawodnicy od wielu lat zdobywają tytuły na zawodach rangi Mistrzostw
+        Europy i Świata. Do najbardziej utytułowanych graczy należą:
+      </p>
+      <ul>
+        <li>
+          Szymon Skalski – Mistrz Świata Red Bull Street Style Tokio 2013,
+          Mistrz Świata 2011 Super Ball Praga (konkurencja Battle), członek
+          grupy Be Freestyle,
+        </li>
+        <li>
+          Paweł Skóra – Mistrz Europy 2014 (konkurencja Sick three), Mistrz
+          Świata 2011 Super Ball Praga (konkurencja Sick three), Mistrz Europy
+          2010 (konkurencja Routine),
+        </li>
+        <li>Łukasz Chwieduk – Mistrz Europy Praga 2010 i Budapeszt 2013,</li>
+        <li>
+          Michał Rycaj – Mistrz Świata 2013 F3 World Tour, wicemistrz Świata
+          Super Ball Praga 2012 (konkurencja: Battle),Mistrz Świata 2015
+          Superball (konkurencja battle),
+        </li>
+        <li>Daniel Mikołajek – Mistrz Europy 2014,</li>
+        <li>
+          Krzysztof Golonka – Mistrz Świata Praga 2011 (The Best Freestyle
+          Football Tricks).
+        </li>
+      </ul>
+    </section>
+
+    <section class="turnieje">
+      <h2 id="zawodyff">Najbardziej popularne zawody</h2>
+      <p>
+        Na arenie międzynarodowej rozgrywają się turnieje freestyle footballu.
+        Uczestniczą w nich najlepsi freestylerzy z całego świata. Największymi
+        jak dotąd imprezami tego typu były Masters of The Game (MOTG) rozgrywane
+        w grudniu 2006 roku w Amsterdamie, gdzie zwycięzcą został Anglik John
+        Farnworth oraz Red Bull Street Style, którego eliminacje odbywały się w
+        każdym kraju, a później finał odbył się w São Paulo (Brazylia). W
+        zawodach tych zwyciężył francuski freestyler Arnaud "Séan" Garnier,
+        przyjmując tytuł mistrza świata Street Style Soccer, który później w
+        2010. stracił na rzecz reprezentanta Norwegii Andersa Solum w światowym
+        turnieju Red Bull Stret Style w Kapsztadzie. W 2012 w Lecce we Włoszech
+        odbył się finał trzeciej edycji tych międzynarodowych zawodów, który
+        wygrał Tokuda Tokaro. W 2013 tytuł mistrza Red Bull Street Style przejął
+        polski freestyler Szymon Skalski.
+      </p>
+
+      <div class="overlay">
+        <img
+          id="rbss-logo"
+          src="./img/red-bull-street-style-logo.png"
+          alt="rbss"
+        />
+        <img
+          id="rbss-comp"
+          src="./img/red-bull-street-style-world-final-valencia-venue.avif"
+          alt="redbull"
+        />
+        <p class="link">RedBull Street Style Valencia 2021</p>
+      </div>
+
+      <div class="overlay">
+        <img
+          id="rbss-comp"
+          src="./img/3SV_STREETSTYLE_MIAMI_028.jpg"
+          alt="miami-rbss"
+        />
+        <p class="link">RedBull Street Style Miami 2019</p>
+      </div>
+
+      <div class="overlay">
+        <img
+          id="rbss-comp"
+          src="./img/5be940f99fadf_o_original.jpg"
+          alt="england-rbss"
+        />
+        <p class="link">RedBull Street Style Anglia 2016</p>
+      </div>
+    </section>
+
+    <section class="kontakt">
+      <h2 id="kontakt">Kontakt</h2>
+
+      <p>Prezes PFFA (Polish Freestyle Football Association</p>
+      <a
+        href="https://www.r-style.pl/oxy_testimonial/tomasz-lebiocki/"
+        target="_blank"
+        ><i><img src="./img/r-style.jpg" alt="r-style" /></i
+      ></a>
+
+      <p>Polish Freestyle Football Instagram</p>
+      <a href="https://www.instagram.com/polishfreestyle/" target="_blank"
+        ><i class="icon-instagram"></i
+      ></a>
+    </section>
+
+    <footer>
+      <p>
+        Strona stworzona przez amatora programistę - Grzegorz Osiniak &copy
+        Wszelkie prawa zastrzeżone
+      </p>
+    </footer>
+  </body>
+</html>

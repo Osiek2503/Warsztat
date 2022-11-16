@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freestyle football is my passion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/fontello.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kanit:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <script src="jquery.scrollTo.min.js"></script>
+
+    <script>
+      jQuery(function ($) {
+        //zresetuj scrolla
+        $.scrollTo(0);
+        $("#link1").click(function () {
+          $.scrollTo($("#historiaff"), 500);
+        });
+        $("#link2").click(function () {
+          $.scrollTo($("#styleff"), 500);
+        });
+        $("#link3").click(function () {
+          $.scrollTo($("#polskaff"), 500);
+        });
+        $("#link4").click(function () {
+          $.scrollTo($("#zawodyff"), 500);
+        });
+        $("#link5").click(function () {
+          $.scrollTo($("#kontakt"), 500);
+        });
+        $(".scrollup").click(function () {
+          $.scrollTo($("body"), 1000);
+        });
+
+        //pokaż podczas przewijania
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 300) $(".scrollup").fadeIn();
+          else $(".scrollup").fadeOut();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1>Freestyle Football is my passion</h1>
+      <img src="./img/freestyle-football.jpeg" alt="freestyle-football-logo" />
+    </div>
+    <nav class="menu">
+      <div class="dropdown">
+        <a href="index.html">Czym jest freestyle football</a>
+        <ul>
+          <li><a id="link1" href="#">Historia</a></li>
+          <li><a id="link2" href="#">Style</a></li>
+          <li><a id="link3" href="#">Polska we Freestyle Footballu</a></li>
+          <li><a id="link4" href="#">Turnieje</a></li>
+        </ul>
+      </div>
+      <a href="#">Leksykon trików</a>
+      <a id="link5" href="#">Kontakt</a>
+    </nav>
+    <a href="#" class="scrollup"></a>
+
+    <div class="naglowek">
+      <h1>Strona w budowie</h1>
+    </div>
+
+    <section class="kontakt">
+      <h2 id="kontakt">Kontakt</h2>
+
+      <p>Prezes PFFA (Polish Freestyle Football Association</p>
+      <a
+        href="https://www.r-style.pl/oxy_testimonial/tomasz-lebiocki/"
+        target="_blank"
+        ><i><img src="./img/r-style.jpg" alt="r-style" /></i
+      ></a>
+
+      <p>Polish Freestyle Football Instagram</p>
+      <a href="https://www.instagram.com/polishfreestyle/" target="_blank"
+        ><i class="icon-instagram"></i
+      ></a>
+    </section>
+
+    <footer>
+      <p>
+        Strona stworzona przez amatora programistę - Grzegorz Osiniak &copy
+        Wszelkie prawa zastrzeżone
+      </p>
+    </footer>
+  </body>
+</html>
